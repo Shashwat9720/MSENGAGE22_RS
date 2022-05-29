@@ -22,9 +22,10 @@ I) Make sure you have Pythons Flask framework installed in your system.
 II) Extract song_data and triplets_file rar files in same directory as Project_final.py python script
 
 III) Open Project_final.py python script and run the file.
+
 IV)Following this use the IP address in the output terminal of your IDE or use local host IP address http://127.0.0.1:5000/
 
-IV)Now you shall find yourself on the landing page to proceed further you can take two steps
+V)Now you shall find yourself on the landing page to proceed further you can take two steps
  a)Go to Register and make an account for yourself after this visit login page and fill in your credentials
  
     or
@@ -35,9 +36,9 @@ b) Directly login using the credentials
  
  password-12345678
 
-V) Now you shall find yourself on user details page fill in your first name and last name and an integral user id
+VI) Now you shall find yourself on user details page fill in your first name and last name and an integral user id
 
-VI) Now you will be redirected to recommendation page where you shall find top recommended songs on the basis of popularities
+VII) Now you will be redirected to recommendation page where you shall find top recommended songs on the basis of popularities
 
 ## Tech Stack
 1)HTML
