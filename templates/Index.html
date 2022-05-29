@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS/Index.css') }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <title>Musify</title>
+  <link rel="icon" href="{{ url_for('static',filename='images/logo.png') }}">
+</head>
+
+<body>
+
+  <header>
+<!-- Navbar -->
+    <nav class="navbar" class="navbg">
+
+      <div class="container">
+        <div class="LOGO">
+          <a href="{{ url_for('index') }}" class="navbar-brand">
+            <img src="{{ url_for('static',filename='images/LOGO2.png') }}" width="150px" height="30px">
+          </a>
+        </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+
+        </a>
+        <div class="menu">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="{{ url_for('Pricing') }}" class="nav-link">Get Subscription</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Help</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">About Musify</a>
+            </li>
+
+            <li class="nav-item divisor"></li>
+
+            <li class="nav-item">
+              <a href="{{ url_for('login') }}" class="nav-link">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ url_for('Registration') }}" class="nav-link">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      </div>
+    </nav>
+  </header>
+ <!-- Banner -->
+  <section id="home" class="d-flex">
+    <div class="container align-self-center">
+      <div class="R">
+        <div class="column-md-12 frontcover">
+
+          <div id="carousel-spotify" class="carousel slide" class="carousel fade" data-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <h1>Ad Free Music</h1>
+                <a href="{{ url_for('login') }}" class="btn btn-lg btn-custom btn-violet">
+                  Enjoy Musify for free
+                </a>
+
+                <a href="{{ url_for('Pricing') }}" class="btn btn-lg btn-custom btn-white">
+                  Get Subscription
+                </a>
+              </div>
+
+              <div class="carousel-item">
+                <h1>Your top artists</h1>
+                <a href="{{ url_for('Pricing') }}" class="btn btn-lg btn-custom btn-white ">
+                  <i class="fas fa-music"></i> Listen Now
+                </a>
+              </div>
+              <div class="carousel-item">
+                <h1>3 Months Free Trial</h1>
+                <a href="{{ url_for('login') }}" class="btn btn-lg btn-custom btn-violet">
+                  <i class="fas fa-music"></i> Try Musify For Free
+                </a>
+              </div>
+
+            </div>
+
+            <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
+              <i class="fas fa-angle-left fa-5x"></i>
+            </a>
+
+            <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
+              <i class="fas fa-angle-right fa-5x"></i>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Services Banner -->
+  <section id="services" class="Block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row cover">
+            <div class="col-md-6">
+              <img src="{{ url_for('static',filename='images/card1.jpg') }}" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-6">
+              <img src="{{ url_for('static',filename='images/card2.jpg') }}" class="img-fluid" alt="Responsive image">
+            </div>
+          </div>
+          <div class="row cover">
+            <div class="col-md-6">
+              <img src="{{ url_for('static',filename='images/card3.jpg') }}" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-6">
+              <img src="{{ url_for('static',filename='images/card4.jpg') }}" class="img-fluid" alt="Responsive image">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+
+          <h2>What does Musify Offers?</h2>
+
+          <h3>Music</h3>
+          <p>Musify has millions of songs. Listen to your favorite sounds, discover new music and gather your favorites
+            in one place.</p>
+
+          <h3>Personalize</h3>
+          <p>Personalize your listening experience by creating personalize playlist.</p>
+
+          <h3>New releases</h3>
+          <p>Listen to the week's new singles and albums and see what's hitting the Top 50.</p>
+          <p>And More....</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Features banner -->
+  <section id="resources" class="Block">
+    <div class="container">
+      <div class="row">
+        <div class="column-md-6">
+
+          <h2>Easy to use</h2>
+          <h3>Search</h3>
+          <p>Already know what you want to hear? Just search and press play.
+          </p>
+
+          <h3>Explore</h3>
+          <p>Cant decide what to listen, explore new songs and Music
+          </p>
+
+          <h3>Personalize</h3>
+          <p>Personalize your listening experience with Musify.
+          </p>
+          <h3>To sail</h3>
+          <p>See the new releases, what's grooving on the charts and the best playlists for your moment.
+          </p>
+          <h3>Musify Orignals</h3>
+          <p>Listen to Musify Orignal Podcast
+          </p>
+
+
+        </div>
+        <div class="col-md-4">
+          <div class="row rotate">
+            <div class="col-md-12">
+              <img src="{{ url_for('static',filename='images/iphone1.png') }}" class="img-fluid">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="Index.html"><img src="{{ url_for('static',filename='images/LOGO3.png') }}" class width="142"></a>
+
+        </div>
+        <div class="col-md-2">
+          <h4>Company</h4>
+          <ul class="ft">
+            <li>About Musify</li>
+            <li>News</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4>COMMUNITIES</h4>
+          <ul class="ft">
+            <li>Artists</li>
+            <li>Developers</li>
+            <li>Advertising</li>
+            <li>Investors</li>
+            <li>Vendors</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4>Useful links</h4>
+          <ul class="ft">
+            <li>Privacy Policy</li>
+            <li>Terms and Condition</li>
+            <li>Report an issue</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"><img
+                  src="{{ url_for('static',filename='images/facebook.png') }}" class="logos"></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F%3F__coig_login%3D1"
+                target="_blank"><img src="{{ url_for('static',filename='images/instagram.png') }}" class="logos"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/i/flow/login" target="_blank"><img
+                  src="{{ url_for('static',filename='images/twitter.png') }}" class="logos"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>src = "https://code.jquery.com/jquery-3.5.1.slim.js"</script>
+  <script>
+    const toggle_button = document.getElementsByClassName('toggle-button')[0]
+    const menu = document.getElementsByClassName('menu')[0]
+    toggle_button.addEventListener('click', () => {
+      menu.classList.toggle('active')
+    })
+
+  </script>
+
+
+</body>
+
+</html>

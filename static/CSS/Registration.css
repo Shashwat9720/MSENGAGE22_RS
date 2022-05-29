@@ -1,0 +1,107 @@
+
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body
+{
+   height: 100%;
+    background-attachment: fixed;
+    background: linear-gradient(20deg,var(--primary),var(--seconday)),
+	 url(../images/background_home.jpg) center/cover;
+}
+input
+{
+    border-style: none;
+}
+.container 
+{
+    align-items: center;
+    height:70%
+  
+}
+.logo
+{      margin-left: 20%;
+    filter:invert(100%)
+}
+.Name 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 40%;
+}
+.dob 
+{ font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-left:30%;
+}
+.gender
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+:root
+{
+	--primary:rgba(28, 27, 105, 0.5);
+	--seconday:rgba(116, 3, 8, 0.5);
+	
+}
+
+.row
+{ 
+    margin-top: 2px;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px;
+   background-color: white;
+}
+img 
+{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.form.control
+{   
+    width: 100%;
+    border-radius: 5px;
+}
+.form-row
+{   
+    margin-left: 20%;
+}
+h1 
+{
+  margin-left: 80px;
+}
+h4 
+{
+    margin-left: 70px;
+}
+.a 
+{
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: 110px;
+}
+
+.btn1 
+{  margin-top: 15px;
+    margin-bottom: 15px;
+    border:none;
+    outline: none;
+    height:50px;
+    width: 100%;
+    background: #7a24f1;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btn1:hover
+{
+    background:rgba(255,86,86);
+	color: white;
+	transition: 500ms;
+}
